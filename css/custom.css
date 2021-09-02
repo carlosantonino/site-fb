@@ -63,6 +63,10 @@ body {
         display: block;
         z-index: 999;
     }
+
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
     .navbar .menu {
         background-color: #121721;
         position: fixed;
@@ -72,6 +76,7 @@ body {
         top: 0;
         text-align: center;
         padding-top: 80px;
+        transition: all 0.3s ease;
     }
     .navbar .menu.active {
         left: 0;
@@ -84,5 +89,8 @@ body {
         display: inline-block;
         margin: 13px 0;
         font-size: 25px;
+    }
+    .max-width{
+        max-width: 930px;
     }
 }
